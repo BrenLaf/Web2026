@@ -1,50 +1,42 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <title>My website 2026</title>
+    <head>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
 
     <body>
-        <h2>HTML Tables</h2>
+        <h2>Table With Border</h2>
 
-        <p>using table allows you to add stuff to the table.</p>
-        <p>Using TR creats a row.</p>
-        <p>Use td to save the data in the table.</p>
+        <p>Use the CSS border property t oadd a border to the table.</p>
 
-        <hr>
-        <h2>3 Columns:</h2>
-        <table>
-            <button>
-                <tr>
-                    <td>100</td>
-                    <td>200</td>
-                    <td>300</td>
-                </tr>
-            </button>
-        </table>
-        <hr>
-        <h2>3 Rows 3 Columns:</h2>
-
-        <table>
+        <table style="width:100%">
             <tr>
-                <td>100</td>
-                <td>200</td>
-                <td>300</td>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
             </tr>
             <tr>
-                <td>400</td>
-                <td>500</td>
-                <td>600</td>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
             </tr>
-            <button>
-                <tr>
-                    <td>700</td>
-                    <td>800</td>
-                    <td>900</td>
-                </tr>
-            </button>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
         </table>
-
-
-        <hr>
     </body>
-
 </html>
