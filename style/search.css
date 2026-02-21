@@ -1,0 +1,45 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(230, 0, 255), rgb(231, 33, 252));
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+.search {
+    position: relative;
+    height: 50px;
+}
+
+.input {
+    background: white;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 15px;
+    width: 200px;
+}
+
+.btn {
+    background: white;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    heigth: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.input:focus {
+    outline: none;
+}
+
