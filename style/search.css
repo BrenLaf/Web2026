@@ -24,6 +24,7 @@ body {
     padding: 15px;
     height: 15px;
     width: 50px;
+    transition: width 0.5s;
 }
 
 .btn {
