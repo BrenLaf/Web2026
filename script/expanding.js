@@ -1,1 +1,3 @@
-expanding = document.querySelector()
+pannels = document.querySelectorAll('.pannel');
+
+console.log(pannels)
