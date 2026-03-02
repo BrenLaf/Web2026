@@ -28,6 +28,8 @@ body {
     position: relative;
 }
 
-.panel h3 {
-    
+.pannel h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
