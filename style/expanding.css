@@ -37,7 +37,6 @@ body {
     margin: 0px;
     opacity: 0;
     transition: opacity 1s ease-in 0.5s;
-
 }
 
 .pannel.active {
