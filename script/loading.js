@@ -5,7 +5,7 @@ load = 0
 
 int = setInterval(bluring, 30)
 
-function blurring() {
+function bluring() {
     load = load + 1
     loadText.innerText = `${load}%`
     loadText.style.opacity = 1-load/100
