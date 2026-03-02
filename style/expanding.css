@@ -26,6 +26,7 @@ body {
     flex: 1;
     margin: 10px;
     position: relative;
+    transition: flex 1s ease-in;
 }
 
 .pannel h3 {
