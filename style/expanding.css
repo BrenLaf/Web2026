@@ -34,8 +34,13 @@ body {
     left: 20px;
     font-size: 24px;
     margin: 0px;
+    opacity: 0;
 }
 
 .pannel.active {
     flex: 10;
+}
+
+.pannel.active h3{
+    opacity: 1;
 }
