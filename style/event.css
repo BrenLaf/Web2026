@@ -1,4 +1,15 @@
 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
 
 .rectangle {
     height: 100px;
@@ -6,9 +17,9 @@
     background: red;
     margin: 3px;
 }
-.
-.rectangle.click {
+
+.click {
     position: absolute;
-    top: 0;
-    right: 90;
+    top: 20px;
+    left:20px;
 }
