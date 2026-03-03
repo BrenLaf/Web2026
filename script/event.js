@@ -8,7 +8,7 @@ clickBox.addEventListener('click', () => {
     clickBox.style.background = colors[index]
     clickBox.style.color = textColor[index]
     index++
-    if (index == 6) {
+    if (index == colors.length) {
         index = 0
     }
 })
