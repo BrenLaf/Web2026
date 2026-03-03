@@ -1,1 +1,3 @@
-event = document.querySelector('.event')
+rectangle = document.querySelector('.rectangle')
+
+
