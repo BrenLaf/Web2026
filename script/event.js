@@ -1,3 +1,7 @@
 clickBox = document.querySelector('.click')
 
-clickBox.style.background = 'blue'
+clickBox.addEventListener('click',() => {
+    clickBox.style.background = 'blue'
+    clickBox.style.color = 'white'
+})
+
