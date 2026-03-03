@@ -16,6 +16,10 @@ body{
     width: 300px;
     background: red;
     margin: 3px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-itmes: center;
 }
 
 .click {
