@@ -9,6 +9,6 @@
 .
 .rectangle.click {
     position: absolute;
-    top: 0px;
-    right: 90px;
+    top: 0;
+    right: 90;
 }
