@@ -1,0 +1,1 @@
+event = document.querySelector('.event')
