@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: DodgerBlue;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background: palegreen;
+    color: black;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
