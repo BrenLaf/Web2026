@@ -2,3 +2,15 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    item-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    
+}
