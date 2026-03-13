@@ -1,17 +1,21 @@
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
-    background; ;
-    display: flex;
+    background: #333333;
+    color: #222222;
+    /* display: flex;
     justify-content: center;
     item-align: center;
-    height: 100vh;
+    height: 100vh; */
     margin: 0;
 }
 
 .container {
-
+    background: #fafafa;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
 }
