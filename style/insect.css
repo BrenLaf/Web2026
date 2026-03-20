@@ -117,4 +117,9 @@
 .insect {
     width: 100px;
     height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
