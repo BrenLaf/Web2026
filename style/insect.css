@@ -123,3 +123,12 @@
     justify-content: center;
     position: absolute;
 }
+
+.insect.caught {
+   transform: scale(0);
+}
+
+.insect img {
+   width: 100px;
+   height: 100px;
+}
