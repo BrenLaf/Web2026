@@ -42,3 +42,13 @@ function getRandomLocation() {
     y = Math.random()*(height-200) + 100;
     return{x,y}
 }
+
+function catchInsects() {
+    //increaseScore();
+    this.classList.add('caught');
+    set.Timeout(() => this.remove(), 2000)
+    setTimeout(createInsect, 1000);
+    sestTimeout(createInsect, 1500);
+}
+
+
