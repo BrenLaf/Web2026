@@ -1,3 +1,4 @@
+
 screens = document.querySelectorAll('.screen');
 choose_insect_btn = document.querySelectorAll('.choose-insect-btn');
 start_btn = document.getElementById('start-btn');
@@ -27,7 +28,17 @@ function startGame() {
 function createInsect() {
     insect = document.createElement('div');
     insect.classList.add('insect');
-    insect.innerHTML = `<img src="${src}" alt"${alt}" style="transform: rotate(${Math.floor(Math.random() * 360)}deg)">`
+    {x,y} = getRandomLocation();
+    insect.style.top = `${y}px`;
+    insect.style.left = `${x}px`;
+    insect.innerHTML = `<img src="${src}" alt"${alt}" style="transform: rotate(${Math.floor(Math.random() * 360)}deg)">`;
     game_container.appendChild(insect)
 }
 
+function getRandomLocation() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    x = Math.random()*(width-200) + 100;
+    y = Math.random()*(height-200) + 100;
+    return{x,y}
+}
