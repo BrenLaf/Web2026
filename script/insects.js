@@ -2,8 +2,10 @@ screens = document.querySelectorAll('.screen');
 choose_insect_btn = document.querySelectorAll('.choose-insect-btn');
 start_btn = document.getElementById('start-btn');
 game_container = document.querySelector('.game-container');
-scoreElement = document.getElementById('.score');
+scoreEl = document.getElementById('score');
+timeEl = document.getElementById('time');
 score = 0;
+seconds = 0;
 
 
 start_btn.addEventListener('click', () => {
@@ -56,6 +58,11 @@ function catchInsects() {
 
 function increaseScore() {
     score++;
-    scoreElement.innerHTML = `Score: ${score}`;
+    scoreEl.innerHTML = `Score: ${score}`;
 }
 
+increaseTime.setInterval(1000);
+function increaseTime() {
+    seconds ++;
+    timeEl.innerHTML = `Time: ${seconds}`;
+}
