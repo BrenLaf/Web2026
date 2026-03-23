@@ -31,7 +31,7 @@ function startGame() {
 }
 
 function createInsect() {
-    insect = document.createElement('div');
+    const insect = document.createElement('div');
     insect.classList.add('insect');
     const {x,y} = getRandomLocation();
     insect.style.top = `${y}px`;
