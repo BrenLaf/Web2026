@@ -39,7 +39,7 @@ function createInsect() {
     insect.innerHTML = `<img src="${src}" alt"${alt}" style="transform: rotate(${Math.floor(Math.random()*360)}deg)">`;
     game_container.appendChild(insect);
     insect.addEventListener('click', () => {
-    catchInsect();
+    catchInsects();
     })
 }
 
