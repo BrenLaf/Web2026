@@ -1,8 +1,8 @@
-
 screens = document.querySelectorAll('.screen');
 choose_insect_btn = document.querySelectorAll('.choose-insect-btn');
 start_btn = document.getElementById('start-btn');
 game_container = document.querySelector('.game-container')
+
 
 start_btn.addEventListener('click', () => {
     screens[0].classList.add('up');
