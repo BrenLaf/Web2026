@@ -1,7 +1,7 @@
 screens = document.querySelectorAll('.screen');
 choose_insect_btn = document.querySelectorAll('.choose-insect-btn');
 start_btn = document.getElementById('start-btn');
-game_container = document.querySelector('.game-container')
+game_container = document.querySelector('.game-container');
 
 
 start_btn.addEventListener('click', () => {
@@ -32,7 +32,7 @@ function createInsect() {
     insect.style.top = `${y}px`;
     insect.style.left = `${x}px`;
     insect.innerHTML = `<img src="${src}" alt"${alt}" style="transform: rotate(${Math.floor(Math.random() * 360)}deg)">`;
-    game_container.appendChild(insect)
+    game_container.appendChild(insect);
 }
 
 function getRandomLocation() {
@@ -46,7 +46,7 @@ function getRandomLocation() {
 function catchInsects() {
     //increaseScore();
     this.classList.add('caught');
-    set.Timeout(() => this.remove(), 2000)
+    set.Timeout(() => this.remove(), 2000);
     setTimeout(createInsect, 1000);
     sestTimeout(createInsect, 1500);
 }
