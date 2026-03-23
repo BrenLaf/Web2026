@@ -65,9 +65,6 @@ function increaseScore() {
 function increaseTime() {
     seconds ++;
     minutes = Math.floor(seconds/60);
-    if (seconds == 60){
-        minutes++;
-        seconds = 0;
-    }
+    s = seconds % 60;
     timeEl.innerHTML = `Time: ${minutes}:${seconds}`;
 }
