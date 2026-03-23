@@ -48,7 +48,6 @@ function catchInsects() {
     this.classList.add('caught');
     set.Timeout(() => this.remove(), 2000);
     setTimeout(createInsect, 1000);
-    sestTimeout(createInsect, 1500);
 }
 
 
