@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.customClicker {
+    width: 400px;
+    height: 20px;
+    position: absolute;
+    top:50%;
+    left: 35%;
+    background: purple;
+    border-radius: 100px;
+    color: white;
+    text-align: center;
+}
