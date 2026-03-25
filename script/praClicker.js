@@ -1,2 +1,0 @@
-button = document.querySelector('.button');
-

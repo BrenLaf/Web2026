@@ -1,15 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    height: 100vh;
+    display: flex;
+    item-align: center;
+    justify-content: center;
     margin: 0;
 }
 
-.customClicker {
-    width: 400px;
-    height: 20px;
+ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.dropbtn {
+    width: 170px;
+    background: white;
+    border: 2px solid;
+}
+
+.dropdown {
     position: absolute;
-    top:50%;
-    left: 35%;
-    background: purple;
-    border-radius: 100px;
-    color: white;
-    text-align: center;
+    left: 10px;
+    top: 10px;
+    background: white;
+    width: 174px;
+}
+
+.dropdown .dropdown-content {
+    opacity: 0;
+}
+
+.dropdown .dropdown-content.show{
+    opacity: 1;
+    background: white;
+    position: absolute;
+    align-itmes: center;
+    left:0px;
+    top: 23px;
+    width: 170px;
+    height: 200px;
+    overflow-x: hidden;
+    border: 2px solid;
 }
