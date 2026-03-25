@@ -8,6 +8,7 @@ body {
     item-align: center;
     justify-content: center;
     margin: 0;
+    overflow-x: hidden;
 }
 
 ul {
@@ -19,17 +20,22 @@ ul {
     width: 170px;
     background: white;
     border: 2px solid;
+    border-radius: 10px;
 }
 
 .dropdown {
     position: absolute;
     left: 10px;
     top: 10px;
-    background: white;
-    width: 174px;
+    background: transparent;
+    width: 170px;
+    height: 220px;
+
 }
 
 .dropdown .dropdown-content {
+    position: absolute;
+    top:-99999px;
     opacity: 0;
 }
 
@@ -44,4 +50,35 @@ ul {
     height: 200px;
     overflow-x: hidden;
     border: 2px solid;
+}
+
+.sidebar {
+    background: rgb(92, 92, 92);
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    z-index: -1;
+    border: 2px, solid;
+    boder-radius: 50px
+}
+
+.fa-solid.fa-angle-down.up {
+    rotate: 180deg;
+}
+
+.sidebar-container {
+    background: blue;
+    position: absolute;
+    bottom: 0%;
+    left: 0px;
+    width: 195px;
+    height: 60%;
+}
+
+.rating-website {
+    position: absolute;
+    top: 10px;
+    right: 100px;
 }
