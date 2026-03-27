@@ -12,7 +12,7 @@
 
  .container.star {
     height: 120px;
-    width: 500px;
+    width: 520px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -23,9 +23,13 @@
 
  .rate {
     position: relative;
+    display:flex;
     align-items: center;
+    justify-content: center;
     height: 100px;
     width: 100px;
+    background: transparent;
+    border: 0px;
  }
 
  .star {
@@ -33,7 +37,13 @@
     height: 100px;
     width: 100px;
  }
- :hover.rate {
+
+ :hover.rate .star {
+    height: 110px;
+    width: 110px;
+ }
+
+ :hover.rate{
     height: 110px;
     width: 110px;
     transform: transition 0.5s ,ease;
