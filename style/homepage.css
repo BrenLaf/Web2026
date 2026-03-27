@@ -5,7 +5,7 @@
 body {
     height: 100vh;
     display: flex;
-    align-items: center; /* ✅ fixed */
+    align-items: center;
     justify-content: center;
     margin: 0;
     overflow-x: hidden;
@@ -65,7 +65,7 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0; /* ✅ fixed */
+    z-index: 0;
     border: 2px solid black;
 }
 
@@ -96,7 +96,7 @@ ul {
     border: 2px solid black;
     border-radius: 9px;
     z-index: 1000;
-    cursor: pointer; /* ✅ THIS FIXES YOUR ISSUE */
+    cursor: pointer;
 }
 
 .star {
