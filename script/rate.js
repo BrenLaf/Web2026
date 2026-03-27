@@ -2,5 +2,5 @@ rate = document.querySelectorAll('.rate');
 star = document.querySelectorAll('.star');
 
 rate.addEventListener('click' () => {
-    rate.style.backgroundColor = "yellow";
+    rate.classList.add('clicked');
 })
