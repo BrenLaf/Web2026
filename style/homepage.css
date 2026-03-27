@@ -5,32 +5,35 @@
 body {
     height: 100vh;
     display: flex;
-    item-align: center;
+    align-items: center; /* ✅ fixed */
     justify-content: center;
     margin: 0;
     overflow-x: hidden;
 }
 
+/* ---------- DROPDOWN ---------- */
+
 ul {
-  list-style-type: none;
-  font-size: 20px;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .dropbtn {
     width: 170px;
     background: white;
-    border: 2px solid;
+    border: 2px solid black;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .dropdown {
     position: absolute;
     left: 10px;
     top: 10px;
-    background: transparent;
     width: 170px;
-    height: 220px;
-
+    z-index:1002;
 }
 
 .dropdown .dropdown-content {
@@ -42,63 +45,111 @@ ul {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.dropdown .dropdown-content.show{
-    transform: scale(1);
+.dropdown .dropdown-content.show {
+    transform: scaleY(1);
     opacity: 1;
-    background: white;
-    position: absolute;
-    align-itmes: center;
-    left:0px;
-    top: 23px;
+    left: 0;
+    top: 40px;
     width: 170px;
     height: 200px;
     overflow-x: hidden;
-    border: 2px solid;
-    transform: scaleY(1);
+    border: 2px solid black;
 }
+
+/* ---------- SIDEBAR ---------- */
 
 .sidebar {
     background: rgb(92, 92, 92);
     width: 200px;
     height: 100vh;
     position: absolute;
-    top: 0px;
-    left:0px;
-    z-index: -1;
-    border: 2px, solid;
-    boder-radius: 50px
-}
-
-.fa-solid.fa-angle-down.up {
-    rotate: 180deg;
+    top: 0;
+    left: 0;
+    z-index: 0; /* ✅ fixed */
+    border: 2px solid black;
 }
 
 .sidebar-container {
-    background: blue;
+    background: gray;
     position: absolute;
-    bottom: 0%;
-    left: 0px;
-    width: 195px;
+    bottom: 3px;
+    left: 3px;
+    width: 190px;
     height: 60%;
+    z-index: 2;
+    border-radius: 20px;
+    border: 2px, solid black;
 }
+
+/* ---------- RATING BUTTON ---------- */
 
 .rating-website {
     position: absolute;
     top: 10%;
     right: 36%;
-}
-
-.fa-regular.fa-star {
-    font-size: 10px;
-}
-
-.rating-website{
     width: 63px;
     height: 63px;
-    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    background: gold;
+    border: 2px solid black;
+    border-radius: 9px;
+    z-index: 1000;
+    cursor: pointer; /* ✅ THIS FIXES YOUR ISSUE */
 }
 
+.star {
+    height: 62px;
+    width: 62px;
+}
+
+/* ---------- ICON ROTATION ---------- */
+
+.fa-solid.fa-angle-down.up {
+    transform: rotate(180deg);
+}
+
+.sunset {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    right: 0px;
+    height: 50vh;
+    width: 86vw;
+    z-index: -1000;
+}
+
+.pageTitle {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    top: 15%;
+    right: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    display: flex;
+    top: 10px;
+    right: 100px;
+    font-size: 46px;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    right: 0px;
+    width: 1160px;
+    height: 320px;
+    background: white;
+    z-index: -10000;
+}
+
+.content1 {
+    position: relative;
+    padding: 10px;
+}
