@@ -10,11 +10,22 @@
     margin: 0;
  }
 
- .container {
+ .container.star {
     height: 100px;
-    width: 400px;
+    width: 500px;
     position: absolute;
-    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px, solid, black;
+    border-radius: 10px;
+ }
+
+ .rate {
+    position: relative;
+    align-items: center;
+    height: 100px;
+    width: 100px;
  }
 
  .star {
