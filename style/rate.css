@@ -1,6 +1,6 @@
  *{
     box-sizing: border-box;
- }
+}
 
  body {
     display: flex;
@@ -8,7 +8,7 @@
     justify-content: center;
     height: 100vh;
     margin: 0;
- }
+}
 
  .container.star {
     height: 120px;
@@ -19,7 +19,7 @@
     justify-content: center;
     border: 2px, solid, black;
     border-radius: 20px;
- }
+}
 
  .rate {
     position: relative;
@@ -31,20 +31,25 @@
     background: transparent;
     border: 0px;
     margin: 4px;
- }
+}
 
  .star {
     position: relative;
     height: 100px;
     width: 100px;
- }
+}
 
  :hover.rate .star {
     height: 110px;
     width: 110px;
- }
+    cursor: pointer;
+}
 
  :hover.rate{
     height: 110px;
     width: 110px;
- }
+}
+
+:hover.container.star {
+    cursor: pointer;
+}
