@@ -16,3 +16,7 @@
     position: absolute;
     background: red;
  }
+
+ .star {
+    position: relative;
+ }
