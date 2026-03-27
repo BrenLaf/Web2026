@@ -1,5 +1,6 @@
-star = document.querySelector('.rate');
+rate = document.querySelectorAll('.rate');
+star = document.querySelectorAll('.star');
 
-star.addEventListener('click' () => {
-    star.style.backgroundColor = "yellow";
+rate.addEventListener('click' () => {
+    rate.style.backgroundColor = "yellow";
 })
