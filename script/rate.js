@@ -1,8 +1,10 @@
+let rated = localStorage.getItem("rated") === 'false';
 
-let rated = Number(localStorage.getitem("rated")) === 'false';
-rate = document.querySelectorAll('.rate');
-star = document.querySelectorAll('.star');
+const rate = document.querySelectorAll('.rate');
+const star = document.querySelectorAll('.star');
 
-rate.addEventListener('click' () => {
-    rate.style.backgroundColor = "yellow";
-})
+rate.forEach(el => {
+    el.addEventListener('click', () => {
+        el.style.backgroundColor = "yellow";
+    });
+});
