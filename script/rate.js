@@ -8,3 +8,4 @@ rate.forEach(el => {
         el.style.backgroundColor = "yellow";
     });
 });
+a
