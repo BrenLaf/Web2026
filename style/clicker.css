@@ -3,4 +3,77 @@
 }
 
 body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url('../images/Simple_Gray_Background.avif');
 }
+
+.money {
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.clicker {
+    background-color: #008CBA;
+    color: white;
+    position: absolute;
+    top: 50%; /* Center it vertically */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button exactly */
+    border-radius: 10px;
+}
+
+.upgradeClicker {
+    background-color: #4CAF50;
+    color: white;
+    position: absolute;
+    left: 10px; /* Position on the left */
+    top: 50%;   /* Center vertically */
+    transform: translateY(-50%); /* Ensure it's centered vertically */
+    border-radius: 20px;
+}
+
+.resetGame {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 20px; /* Position at the top */
+    right: 20px; /* Position at the right */
+    border-radius: 10px;
+}
+
+.autoclick {
+    background: purple;
+    color: white;
+    position: absolute;
+    top:50%;
+    right:10%;
+    border-radius: 10px;
+}
+
+.autoclickerSpeed {
+    background: teal;
+    color: white;
+    position: absolute;
+    top:30%;
+    right:10%;
+    border-radius: 20px;
+}
+
+
