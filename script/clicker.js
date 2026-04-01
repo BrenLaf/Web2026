@@ -56,31 +56,14 @@ clicker.addEventListener('click', () => {
 
 // UPGRADE BUTTON
 upgradeClicker.addEventListener('click', () => {
-    if (currentClickLimit < clickPowerLimiter){
-        if (saved >= clickCost) {
-            saved -= clickCost;
-            currentClickLimit ++
-            if (clickCost > 2000) {
-                clickCost += 1528;
-                clickPower *= 1.5;
-            } else {
-                clickCost *= 4;
-                clickPower++;
-            }
-            clickCost = Math.round(clickCost);
-            clickerUpgrade++;
-
-            money.innerText = `$${saved}`;
-            upgradeClicker.innerText = `Upgrade Clicker +1/click $${clickCost}`;
-            if (currentClickLimit == clickPowerLimiter) {
-                upgradeClicker.innerText = "Upgrade Clicker $MAX"
-            }
-
-            saveGame();
-        }
-    } else {
-        upgradeClicker.innerText = "Upgrade Clicker $MAX"
+    if (clickCost >= saved) {
+        clickCost += 10;
+    clickPower ++;
+    clickCost.innerText = `+1/click $${clickCost}`
+    saved -= clickCost;
+    money.innerText = `${saved}`;
     }
+
 });
 
 // AUTO-CLICKER BUTTON
