@@ -56,11 +56,11 @@ clicker.addEventListener('click', () => {
 
 // UPGRADE BUTTON
 upgradeClicker.addEventListener('click', () => {
-    if (clickCost >= saved) {
+    if (saved >= clickCost) {
         saved -= clickCost;
         clickCost += 10;
         clickPower ++;
-        clickCost.innerText = `+1/click $${clickCost}`
+        clickCost.innerText = `+1/click $${clickCost}`;
         money.innerText = `${saved}`;
     }
 
