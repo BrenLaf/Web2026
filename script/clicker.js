@@ -60,10 +60,10 @@ upgradeClicker.addEventListener('click', () => {
         saved -= clickCost;
         clickCost += 10;
         clickPower ++;
-        clickCost.innerText = `+1/click $${clickCost}`;
-        money.innerText = `${saved}`;
+        upgradeClicker.innerText = `Upgrade clicker +1/click $${clickCost}`;
+        money.innerText = `$${saved}`;
+        saveGame();
     }
-
 });
 
 // AUTO-CLICKER BUTTON
