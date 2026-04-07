@@ -48,7 +48,7 @@ buttons.appendChild(autoclickerSpeed);
 
 // CLICK BUTTON
 clicker.addEventListener('click', () => {
-    saved += 999999;
+    saved += clickPower;
     saved = Math.floor(saved);
     money.innerText = `$${saved}`;
     saveGame();
@@ -108,9 +108,9 @@ autoclickerSpeed.addEventListener('click', () => {
             if (currentAutoClickSpeed == 3){
                 autoclickerSpeedCost *= 2;
             } else if(currentAutoClickSpeed == 2) {
-            autoclickerSpeedCost += 45000;
-            }else if(currentAutoClickSpeed == 1) {
             autoclickerSpeedCost *= 5;
+            }else if(currentAutoClickSpeed == 1) {
+            autoclickerSpeedCost *= 15;
             } else if(currentAutoClickSpeed == 0) {
             autoclickerSpeedCost += 800;
             }
