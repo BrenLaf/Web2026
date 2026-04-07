@@ -71,4 +71,14 @@ body {
     width: 20px;
     height: 190px;
     transform-origin: bottom center;
+    animation: rotate 7.5s, linear forwards infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
