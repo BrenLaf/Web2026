@@ -6,7 +6,7 @@
 body {
     background: #224941;
     color: #ffffff;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     overflow: hidden;
     display: flex;
@@ -14,4 +14,15 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    
 }
