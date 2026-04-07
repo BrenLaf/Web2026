@@ -58,7 +58,7 @@ clicker.addEventListener('click', () => {
 upgradeClicker.addEventListener('click', () => {
     if (saved >= clickCost) {
         saved -= clickCost;
-        clickCost += 20;
+        clickCost += 10;
         clickPower ++;
         upgradeClicker.innerText = `Upgrade clicker +1/click $${clickCost}`;
         money.innerText = `$${saved}`;
@@ -112,7 +112,7 @@ autoclickerSpeed.addEventListener('click', () => {
             }else if(currentAutoClickSpeed == 1) {
             autoclickerSpeedCost *= 5;
             } else if(currentAutoClickSpeed == 0) {
-            autoclickerSpeedCost += 1000;
+            autoclickerSpeedCost == 1000;
             }
             currentAutoClickSpeed ++;
         // Reduce the auto-click speed (decrease the interval)
