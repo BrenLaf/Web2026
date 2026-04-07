@@ -108,11 +108,11 @@ autoclickerSpeed.addEventListener('click', () => {
             if (currentAutoClickSpeed == 3){
                 autoclickerSpeedCost *= 2;
             } else if(currentAutoClickSpeed == 2) {
-            autoclickerSpeedCost == 50000;
+            autoclickerSpeedCost += 45000;
             }else if(currentAutoClickSpeed == 1) {
             autoclickerSpeedCost *= 5;
             } else if(currentAutoClickSpeed == 0) {
-            autoclickerSpeedCost == 1000;
+            autoclickerSpeedCost += 800;
             }
             currentAutoClickSpeed ++;
         // Reduce the auto-click speed (decrease the interval)
