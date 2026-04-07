@@ -106,13 +106,13 @@ autoclickerSpeed.addEventListener('click', () => {
         // If the player has enough money for the speed upgrade
             saved -= autoclickerSpeedCost;  // Deduct the cost for upgrading speed
             if (currentAutoClickSpeed == 3){
-                autoclickerSpeedCost += 1000;
+                autoclickerSpeedCost *= 2;
             } else if(currentAutoClickSpeed == 2) {
-            autoclickerSpeedCost += 800;
+            autoclickerSpeedCost == 50000;
             }else if(currentAutoClickSpeed == 1) {
-            autoclickerSpeedCost *= 2;
+            autoclickerSpeedCost *= 5;
             } else if(currentAutoClickSpeed == 0) {
-            autoclickerSpeedCost *= 4;
+            autoclickerSpeedCost += 1000;
             }
             currentAutoClickSpeed ++;
         // Reduce the auto-click speed (decrease the interval)
