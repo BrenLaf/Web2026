@@ -48,7 +48,7 @@ buttons.appendChild(autoclickerSpeed);
 
 // CLICK BUTTON
 clicker.addEventListener('click', () => {
-    saved += clickPower;
+    saved += 999999;
     saved = Math.floor(saved);
     money.innerText = `$${saved}`;
     saveGame();
