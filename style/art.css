@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.floor {
+    width: 100vw;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.grass-block-1 {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+}
+
+.grass-block-2 {
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    background: rgb(92, 48, 9);
+}
+
+.grass-block-3 {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    background: rgb(92, 48, 9);
+}
+
+.grass-block-4 {
+    position: absolute;
+    top: 0px;
+    left: 240px;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    background: rgb(92, 48, 9);
+}
+
+.grass-block-5 {
+    position: absolute;
+    top: 0px;
+    left: 320px;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    background: rgb(92, 48, 9);
+}
+
+.grass-block-6 {
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    background: rgb(92, 48, 9);
+}
+
+.grass-block-7 {
+    position: absolute;
+    top: 0px;
+    left: 480px;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    background: rgb(92, 48, 9);
+}
+
+.grass-block-8 {
+    position: absolute;
+    top: 0px;
+    left: 560px;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    background: rgb(92, 48, 9);
+}
+
+.pixel {
+    background: lime;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    z-index: 100;
+}
+
+.pixel-1 {
+    background: brown;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    z-index: 100;
+}
+
+.pixel-2 {
+    background: green;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    z-index: 100;
+}
+
+.grass-block-1 .pixel-3 {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    z-index: 100;
+    background: rgb(92, 48, 9);
+}

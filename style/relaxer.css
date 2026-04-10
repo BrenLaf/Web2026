@@ -71,7 +71,7 @@ body {
     width: 20px;
     height: 190px;
     transform-origin: bottom center;
-    animation: rotate 7.5s, linear forwards infinite;
+    animation: rotate 7.5s linear forwards infinite;
 }
 
 @keyframes rotate {
@@ -81,4 +81,37 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.container.grow {
+    animation: grow 3s linear forwards;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.container.shrink {
+    animation: shrink 3s linear forwards;
+}
+
+.text {
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    z-index: 100;
 }
